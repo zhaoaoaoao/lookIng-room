@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/find-pass.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <div class="outer">
+        <img src="../index/logo.jpg" class="logo"><img src="../index/my.jpg" class="my"><img src="../index/xiazai.jpg" class="xiazai">
+    </div>
+    <ul class="list">
+        <li>
+            <p><span class="index">首页</span>>我的>登录</p>
+        </li>
+        <li class="login-way">
+            <div class="com color">普通登录</div>
+            <div class="short">验证码快捷登录</div>
+        </li>
+        <li>
+            <input type="text" placeholder="请输入手机号">
+            <button class="icon-code">发送验证码</button>
+        </li>
+        <li>
+            <input type="text" placeholder="请输入短信中的验证码">
+
+        </li>
+        <li class="sub">
+            <button>验证并登录</button>
+        </li>
+        <li class="option">
+            <span class="res">立即注册</span>
+            <span>忘记密码</span>
+        </li>
+
+    </ul>
+</body>
+<script>
+    function play() {
+        var wid = 320;
+        var nwid = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = nwid / wid * 10 + 'px';
+    }
+    play();
+    window.onresize = play;
+</script>
+
+</html>

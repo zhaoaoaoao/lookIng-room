@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/my.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <ul class="list">
+        <li class="myimg-one">
+            <div class="imgs">
+                <div class="me"><img src="../my/urse.png" alt=""><span>我的</span></div>
+                <div class="down"><img src="../my/down.png" alt=""><span>app</span></div>
+            </div>
+            <img src="../my/urse2.png" class="userimg">
+            <button>登录</button>
+        </li>
+        <li>
+            <div><img src="../my/icon1.png" alt="">&nbsp;<span>我关注的房源</span></div>
+            <img src="../my/right.png" alt="">
+        </li>
+        <li>
+            <div><img src="../my/icon2.png" alt=""> &nbsp;<span>我关注的小区</span></div>
+            <img src="../my/right.png" alt="">
+        </li>
+        <li>
+            <div><img src="../my/icon3.png" alt="">&nbsp;<span>我关注的新房</span></div>
+            <img src="../my/right.png" alt="">
+        </li>
+        <li>
+            <div><img src="../my/icon4.png" alt="">&nbsp;<span>我的看房记录</span></div>
+            <img src="../my/right.png" alt="">
+        </li>
+    </ul>
+</body>
+<script>
+    function play() {
+        var wid = 320;
+        var nwid = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = nwid / wid * 10 + 'px';
+    }
+    play();
+    window.onresize = play;
+</script>
+
+
+</html>
