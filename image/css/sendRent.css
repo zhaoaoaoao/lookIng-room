@@ -1,0 +1,65 @@
+body .rent {
+  background-color: #fff;
+  font-size: 0.24rem;
+  line-height: 0.72rem;
+  margin-bottom: 0.2rem;
+  border-bottom: 0.01rem solid #ccc;
+}
+body .rent a {
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+body .house {
+  font-size: 0.24rem;
+}
+body .house div.h_sel {
+  margin-top: 0.24rem;
+  color: #6da719;
+}
+body .house div.h_sel span:nth-of-type(1) {
+  display: inline-block;
+  padding: 0rem 0.1rem;
+  line-height: 0.44rem;
+  border: 1px solid #6da719;
+}
+body .house div.h_sel span:nth-of-type(2) {
+  font-weight: 600;
+}
+body .house_n {
+  color: #000;
+  border-bottom: 0.01rem solid #e5e5e5;
+}
+body .house_n li {
+  width: 87%;
+  margin: 0rem 0.4rem 0rem 0.4rem;
+  padding: 0.44rem 0rem 0.46rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .house_n li img {
+  width: 1.62rem;
+  height: 1.51rem;
+  margin-right: 0.2rem;
+}
+body .house_n li div {
+  width: 85%;
+  font-size: 0.24rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body .house_n li div span.font {
+  font-size: 0.26rem;
+  font-weight: 800;
+}
+body .house_n li div div span:nth-of-type(2) {
+  position: absolute;
+  right: 0.4rem;
+}
+body .house_n li div div:nth-of-type(1) {
+  margin-top: 0.1rem;
+}
+body .house_n li div div:nth-of-type(2) {
+  margin: 0.1rem 0rem;
+}

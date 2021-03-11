@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" ,>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/room.css">
+    <link rel="stylesheet" href="../css/room.css">
     <script src=""></script>
     <style>
         #map {
@@ -15,26 +15,25 @@
         }
     </style>
 </head>
-<!-- <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=aXoETCHU8m5qenpACi9aktkBeql0Oy88">
-</script> -->
-<script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=aXoETCHU8m5qenpACi9aktkBeql0Oy88"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=aXoETCHU8m5qenpACi9aktkBeql0Oy88">
+</script>
 
 <body>
     <div class="outer">
-        <img src="../index/logo.jpg" class="logo"><img src="../index/my.jpg" class="my"><img src="../index/xiazai.jpg" class="xiazai">
+        <img src="../images/logo.jpg" class="logo"><img src="../images/my.jpg" class="my"><img src="../images/xiazai.jpg" class="xiazai">
     </div>
     <ul class="list">
         <li class="l-one">
             <p><span class="index">首页</span>>我的>注册</p>
         </li>
         <li class="banner">
-            <img src="../rentalList/banner.png" alt="">
+            <img src="../images/banner.png" alt="">
             <div class="b-nav">分享</div>
         </li>
         <li class="title">
             <div class="head">天鹅湾小区精装两居，满五唯一，业主换房急售</div>
             <div class="attention">
-                <img src="../rentalList/xin.png" alt="">
+                <img src="../images/xin.png" alt="">
                 <span>关注</span>
             </div>
         </li>
@@ -70,7 +69,7 @@
             <div class="sessage">
                 <div class="sessage-title">
                     <span>经纪人房评</span>
-                    <img src="../rentalList/right.png" alt="">
+                    <img src="../images/right.png" alt="">
                 </div>
                 <div class="s-text">
                     地理位置：在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在
@@ -79,7 +78,7 @@
             <div class="sessage">
                 <div class="sessage-title">
                     <span>看房客户记录</span>
-                    <img src="../rentalList/right.png" alt="">
+                    <img src="../images/right.png" alt="">
                 </div>
                 <div class="s-text">
                     进一个月新增0位看房客会，共50位
@@ -88,7 +87,7 @@
             <div class="sessage">
                 <div class="sessage-title">
                     <span>位置及周边</span>
-                    <img src="../rentalList/right.png" alt="">
+                    <img src="../images/right.png" alt="">
                 </div>
                 <div class="s-text">
                     <div class="map">
@@ -102,7 +101,7 @@
             <div class="sessage ">
                 <div class="sessage-title">
                     <span>小区成交历史</span>
-                    <img src="../rentalList/right.png" alt="">
+                    <img src="../images/right.png" alt="">
                 </div>
                 <div class="s-text history">
                     <p> <span>3室2厅</span>，<span>146平米</span>，<span>5000元</span></p>
@@ -113,7 +112,7 @@
     </ul>
     <div class="phone">
         <div class="p-left">
-            <img src="../rentalList/man.png" alt="">
+            <img src="../images/man.png" alt="">
             <div>
                 <span>张三</span>
                 <span>1563777523</span>
@@ -121,11 +120,11 @@
         </div>
         <div class="p-right">
             <div>
-                <img src="../rentalList/icon1.png" alt="">
+                <img src="../images/icon1.png" alt="">
                 <span>致电</span>
             </div>
             <div>
-                <img src="../rentalList/icon2.png" alt="">
+                <img src="../images/icon2.png" alt="">
                 <span>短信</span>
             </div>
         </div>
@@ -136,14 +135,14 @@
         </div>
         <div class="f-cen">
             <div class="client">
-                <img src="../index/apple.png" alt="">
+                <img src="../images/apple.png" alt="">
                 <div>
                     <span>iPhone</span>
                     <span>客户端</span>
                 </div>
             </div>
             <div class="client">
-                <img src="../index/android.png" alt="">
+                <img src="../images/android.png" alt="">
                 <div>
                     <span>Android</span>
                     <span>客户端</span>
@@ -168,17 +167,25 @@
     }
     play();
     window.onresize = play;
-    // var map = new BMapGL.Map("map");
-    // // 创建地图实例 
-    // var point = new BMapGL.Point(116.404, 39.915);
-    // // 创建点坐标 
-    // map.centerAndZoom(point, 15);
-    // // 初始化地图，设置中心点坐标和地图级别
-    // map.enableScrollWheelZoom(true);
-
-    var map = new BMapGL.Map("map"); // 创建Map实例
-    map.centerAndZoom(new BMapGL.Point(118.5, 27.5), 5); // 初始化地图,设置中心点坐标和地图级别
-    map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+    window.onload = function() {
+        var map_ = new BMapGL.Map("map"); // 创建地图实例 
+        var point = new BMapGL.Point(116.404, 39.915); // 创建点坐标 
+        var site = new BMapGL.LocationControl(); //添加地位控件
+        var cityCtrl = new BMapGL.CityListControl(); // 添加城市列表控件
+        var zoomCtrl = new BMapGL.ZoomControl(); // 添加缩放控件
+        var scale = {
+            offset: new BMapGL.Size(150, 5) // 创建比例尺
+        }
+        map_.centerAndZoom('郑州市', 11); // 初始化地图，设置中心点坐标和地图级别
+        map_.enableScrollWheelZoom(true); //缩放
+        map_.addControl(cityCtrl);
+        map_.addControl(new BMapGL.ScaleControl(scale))
+        map_.addControl(site)
+        map_.addControl(zoomCtrl);
+        map_.addEventListener('click', function(e) {
+            console.log(e.latlng.lng)
+        }, true)
+    }
 </script>
 
 </html>
